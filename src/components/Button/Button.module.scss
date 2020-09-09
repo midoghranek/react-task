@@ -1,0 +1,22 @@
+@import "../../assets/styles/variables";
+
+// Button component
+.button {
+  button {
+    background-color: $seconday;
+    color: #fff;
+    border: 0;
+    font-family: inherit;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}

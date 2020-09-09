@@ -1,0 +1,16 @@
+// Imports
+@import "variables";
+@import "fonts";
+@import "classes";
+
+// Global styles
+body {
+  font-family: "Montserrat", sans-serif;
+  .boxed {
+    max-width: 1200px;
+    margin: auto;
+  }
+  a {
+    color: $seconday;
+  }
+}
