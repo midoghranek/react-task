@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, Signup, Login } from "./pages";
+import { Home, Signup, Login, ResetPassword } from "./pages";
 
 const Routes = () => {
   return (
@@ -19,6 +19,11 @@ const Routes = () => {
         {/* Login */}
         <Route path="/login">
           <Login />
+        </Route>
+
+        {/* Reset Password */}
+        <Route path="/reset-password">
+          <ResetPassword />
         </Route>
       </Switch>
     </Router>

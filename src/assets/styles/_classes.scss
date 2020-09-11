@@ -14,3 +14,11 @@
 .center {
   text-align: center;
 }
+.line-even {
+  display: flex;
+  justify-content: space-evenly;
+}
+.line-bw {
+  display: flex;
+  justify-content: space-between;
+}
