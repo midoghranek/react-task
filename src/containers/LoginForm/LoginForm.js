@@ -1,12 +1,19 @@
 import React from "react";
 import { Input, Button } from "../../components";
 import styles from "./LoginForm.module.scss";
+import { useHistory } from "react-router-dom";
 
 const LoginForm = () => {
+  const history = useHistory();
+
+  const nextPage = () => {
+    history.push("/");
+  };
+
   return (
-    <form action="/">
-      <Input type="email" name="email" label="Email"></Input>
-      <Input type="password" name="password" label="Password"></Input>
+    <form action="/" onSubmit={nextPage}>
+      <Input type="email" name="email" label="Email" required></Input>
+      <Input type="password" name="password" label="Password" required></Input>
 
       <div className="line-bw">
         <Input type="checkbox" name="remember">
